@@ -5,7 +5,7 @@ Feature: Login scenarios
     When Enter username as "<username>"
     And Enter password as "<password>"
     And Press login button
-    Then Login fails with error <err>
+    Then Login fails with error "<err>"
 
     Examples:
       | username      | password        | err                                                          |

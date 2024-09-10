@@ -9,19 +9,19 @@ public class productsStepDefinition {
         throw new io.cucumber.java.PendingException();
     }
     @When("Click product title {string}")
-    public void clickProductTitle(String string) {
+    public void clickProductTitle(String title) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
     @Then("Products Page opens with title {string} and price {string}")
-    public void productsPageOpensWithTitleAndPrice(String string, String string2) {
+    public void productsPageOpensWithTitleAndPrice(String title, String price) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
 
     @Then("Product Details Page opens with title {string}, price {string} and description {string}")
-    public void productDetailsPageOpensWithTitlePriceAndDescription(String string, String string2, String string3) {
+    public void productDetailsPageOpensWithTitlePriceAndDescription(String title, String price, String description) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
