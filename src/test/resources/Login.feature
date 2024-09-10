@@ -17,7 +17,7 @@ Feature: Login scenarios
     When Enter username as "<username>"
     And Enter password as "<password>"
     And Press login button
-    Then Products Page is opened with title "<title>"
+    Then Products Page opens with title "<title>"
 
     Examples:
       | username      | password        | title    |
