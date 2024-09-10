@@ -19,51 +19,51 @@ public class GlobalParams {
         platformName.set(platformName1);
     }
 
-    public static String getUdid() {
+    public String getUdid() {
         return udid.get();
     }
 
-    public static void setUdid(String udid1) {
+    public void setUdid(String udid1) {
         udid.set(udid1);
     }
 
-    public static String getDeviceName() {
+    public String getDeviceName() {
         return deviceName.get();
     }
 
-    public static void setDeviceName(String deviceName1) {
+    public void setDeviceName(String deviceName1) {
         deviceName.set(deviceName1);
     }
 
-    public static String getSystemPort() {
+    public String getSystemPort() {
         return systemPort.get();
     }
 
-    public static void setSystemPort(String systemPort1) {
+    public void setSystemPort(String systemPort1) {
         systemPort.set(systemPort1);
     }
 
-    public static String getChromeDriverPort() {
+    public String getChromeDriverPort() {
         return chromeDriverPort.get();
     }
 
-    public static void setChromeDriverPort(String chromeDriverPort1) {
+    public void setChromeDriverPort(String chromeDriverPort1) {
         chromeDriverPort.set(chromeDriverPort1);
     }
 
-    public static String getWdaLocalPort() {
+    public String getWdaLocalPort() {
         return wdaLocalPort.get();
     }
 
-    public static void setWdaLocalPort(String wdaLocalPort1) {
+    public void setWdaLocalPort(String wdaLocalPort1) {
         wdaLocalPort.set(wdaLocalPort1);
     }
 
-    public static String getWebkitDebugProxyPort() {
+    public String getWebkitDebugProxyPort() {
         return webkitDebugProxyPort.get();
     }
 
-    public static void setWebkitDebugProxyPort(String webkitDebugProxyPort1) {
+    public void setWebkitDebugProxyPort(String webkitDebugProxyPort1) {
         webkitDebugProxyPort.set(webkitDebugProxyPort1);
     }
 
