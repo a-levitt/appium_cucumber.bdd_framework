@@ -1,7 +1,6 @@
 Feature: Login scenarios
 
   Scenario Outline: Login with username and password one of which is invalid
-    Given User should be on login page
     When Enter username as "<username>"
     And Enter password as "<password>"
     And Press login button
@@ -13,7 +12,6 @@ Feature: Login scenarios
       | standard_user | invalidPassword | Username and password do not match any user in this service. |
 
   Scenario Outline: Login with valid username and password
-    Given User should be on login page
     When Enter username as "<username>"
     And Enter password as "<password>"
     And Press login button
