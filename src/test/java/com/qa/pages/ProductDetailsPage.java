@@ -13,8 +13,9 @@ public class ProductDetailsPage extends MenuPage {
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"test-Description\"]/child::XCUIElementTypeStaticText[2]")
     private WebElement textProductBackpackDescription;
 
- /*   @AndroidFindBy (accessibility = "test-Price")
-    private WebElement textProductBackpackPrice;*/
+    @AndroidFindBy (accessibility = "test-Price")
+    @iOSXCUITFindBy (id = "test-Price")
+    private WebElement textProductBackpackPrice;
 
     @AndroidFindBy (accessibility = "test-BACK TO PRODUCTS")
     @iOSXCUITFindBy (id = "test-BACK TO PRODUCTS")
@@ -28,14 +29,15 @@ public class ProductDetailsPage extends MenuPage {
         return getText(textProductBackpackDescription);
     }
 
-/*    public String getBackpackPrice() {
+    public String getBackpackPrice() {
         return getText(textProductBackpackPrice);
     }
 
     public ProductDetailsPage scrollToBackpackPrice() {
         scrollToElement();
         return this;
-    }*/
+    }
+
 
     public String scrollToBackpackPriceAndGet() {
         return getText(scrollToElement());
