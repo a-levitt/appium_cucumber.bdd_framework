@@ -4,17 +4,17 @@ Feature: Product scenarios
     Given User should be logged in
     Then Products Page opens with title "<title>" and price "<price>"
     Examples:
-      | title                              | price  |
-      | Sauce Labs Bolt T-Shirt            | $15.99 |
+      | title             | price|
+      |Sauce Labs Backpack|$29.99|
+#     | Sauce Labs Bolt T-Shirt            | $15.99 |
 #     | Sauce Labs Onesie                  | $7.99  |
 #     | Test.allTheThings() T-Shirt (Red)  | $15.99 |
-#     | Sauce Labs Backpack                | $29.99 |
 
   Scenario Outline: Validate product info on Product Details page
     Given User should be logged in
     When Click product title "<title>"
     Then Product Details Page opens with title "<title>", price "<price>" and description "<description>"
     Examples:
-      | title                   | price  | description                                                                                                                                     |
-      | Sauce Labs Backpack     | $29.99 | carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.          |
- #    | Sauce Labs Bolt T-Shirt | $15.99 | Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt. |
+      | title             | price| description                                                                                                                          |
+      |Sauce Labs Backpack|$29.99|carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.|
+ #    | Sauce Labs Bolt T-Shirt | $15.99 |Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.|
